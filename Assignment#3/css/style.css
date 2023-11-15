@@ -1,0 +1,240 @@
+/* Global styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #5E3523;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div {
+    margin: 0 20px;
+}
+
+header div a img {
+    height: 60px;
+}
+
+header nav menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+header nav menu li {
+    padding: 0 15px;
+}
+
+header nav menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav menu li a:hover {
+    color: #e1342e;
+}
+
+/* Masthead styles */
+.masthead {
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    background-position: 70px -85%, 0px 90%, 0px 50%, 0 100%;
+    background-size: cover, cover, cover, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+}
+
+.masthead div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background: rgba(94, 53, 35, 1);
+    background: -webkit-linear-gradient(bottom right, rgba(94, 53, 35, .4), rgba(94, 53, 35, .7));
+    background: -moz-linear-gradient(bottom right, rgba(94, 53, 35, .4), rgba(94, 53, 35, .7));
+    background: linear-gradient(to top left, rgba(94, 53, 35, .4), rgba(94, 53, 35, .7));
+}
+
+.masthead div:nth-child(1) h1 {
+    font-size: 62px;
+    color: #fff;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, .5);
+    letter-spacing: 1.5px;
+}
+
+/* SVG Examples section styles */
+#svg-examples {
+    padding: 2% 0%;
+    background-color: #e1341e;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+.btn-container-1 {
+    width: 5%;
+    margin: auto;
+}
+
+.btn-container-1 .btn {
+    color: #fff;
+    font-weight: 400;
+    line-height: 45px;
+    margin: auto;
+    max-width: 0;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.btn-container-1 .btn:hover {
+    text-decoration: none;
+}
+
+.btn-container-1 .btn-1 {
+    font-weight: 100;
+}
+
+.btn-container-1 .btn-1 svg {
+    height: 45px;
+    left: -62px;
+    position: absolute;
+    width: 200px;
+}
+
+.btn-container-1 .btn-1 svg rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+}
+
+.btn-container-1 .btn-1:hover {
+    background: rgba(255, 51, 45, 0);
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.btn-container-1 .btn-1:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+}
+
+/* Drop Shadow section styles */
+#drop-shadow {
+    padding: 5% 10%;
+}
+
+.ds-example-container {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    text-align: center;
+}
+
+.ds-container img {
+    width: 80%;
+    filter: drop-shadow(15px 10px 4px #0e0e0e);
+    transition: all .25s linear;
+}
+
+.ds-container img:hover {
+    filter: drop-shadow(0px 0px 0px #0e0e0e);
+}
+
+.cp-container-1 img {
+    width: 80%;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+.cp-container-2 img {
+    width: 80%;
+    clip-path: circle(40%);
+}
+
+/* Brown box styling for sections */
+section {
+    background-color: #5E3523;
+    color: #fff;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Style individual sections as needed */
+#home {
+    background-image: url('../img'); /* Add your chocolate image URL */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Additional styling for other sections */
+#about, #founder, #nutritional-info, #Interesting-facts {
+    text-align: center;
+}
+
+/* Brown box styling for the form in the footer */
+footer form {
+    background-color: #5E3523;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Footer logo styling */
+footer div:first-child a img {
+    height: 40px;
+}
+
+/* Styling for the flip card */
+.flip-card {
+    perspective: 1000px;
+    position: relative;
+    cursor: pointer;
+}
+
+.flip-card img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    transform-origin: center bottom;
+    transition: transform 0.6s;
+}
+
+.flip-card figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: rotateX(180deg);
+    backface-visibility: hidden;
+    background-color: #5E3523;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.flip-card:hover img {
+    transform: rotateX(180deg);
+}
+
+.flip-card:hover figcaption {
+    transform: rotateX(0deg);
+}

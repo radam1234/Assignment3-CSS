@@ -1,0 +1,131 @@
+<!-- Assignment 3
+Student Name: Ramsin Adam
+Student ID: 200484980
+Due date: Monday, November 13th, 2023 11:59PM
+Description: Making a Nice Website about Candy
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <div>
+        <!-- Logo will appear off the top right with a brown banner -->
+        <a href="index.html"><img src="./img/hersheys-logo-png-transparent.png" alt="Hershey's logo"></a>
+    </div>
+    <nav>
+        <menu>
+            <!-- Will appear at the top corner of the website -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </menu>
+    </nav>
+</header>
+
+<section id="home">
+    <div class="hero-section">
+        <div class="hero-text">
+            <!--Title Page -->
+            <h1>Welcome to Hershey's!</h1>
+            <p>Indulge in the Sweet Symphony of Chocolate</p>
+        </div>
+    </div>
+
+    <!-- These buttons will appear under the title and will bring you to there part of the website -->
+    <div class="scroll-buttons">
+        <a href="#about">About</a>
+        <a href="#founder">Founder </a>
+        <a href="#Interesting-facts">Interesting Facts</a>
+        <a href="#nutritional-info">Nutritional Facts</a>
+    </div>
+</section>
+
+<section id="about">
+    <!-- Content for the "About" section goes here -->
+</section>
+
+<section id="founder">
+    <h2>The Sweet Journey of Hershey's</h2>
+    <!-- Owner of Hershey's along with  -->
+    <p>Hershey's was founded by Milton S. Hershey in 1894 and is one of the largest chocolate manufacturers in the world.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Milton_S._Hershey%2C_1910.jpg" alt="Founder of Hersheys">
+</section>
+
+<section id="nutritional-info">
+    <h2>Nutrition Facts</h2>
+    <!-- This is where all the nutritional facts are  -->
+    <p> Here is what the nutritional facts are from our delicious chocolate!</p>
+    <img src="https://storage.googleapis.com/images-bks-prd-1385851.bks.prd.v8.commerce.mi9cloud.com/product-images/detail/070a9a74-ce27-4b0f-abd1-506bbffdb910.jpeg">
+</section>
+
+<section id="Interesting-facts">
+    <!-- The facts will appear all organized in this order -->
+    <h2> Interesting Facts </h2>
+    <div>
+        <ul>
+            <li> - Hershey became interested in chocolate after the 1893 World's Fair in Chicago.
+                Inspired by German chocolate production, he opened the Hershey Chocolate Company in 1900, selling his caramel</li>
+
+            <li> - In response to a potential threat from Beech Nut Gum, Hershey introduced "Easy Chew" gum in 1915.
+                Import restrictions on sugar and chicle led to the discontinuation of Easy Chew in 1924</li>
+
+            <li> - Hershey's KISSES debuted in 1907, but the origin of the name remains a mystery.
+                One theory suggests the name might be related to the sound or motion during manufacturing</li>
+
+            <li> - KISSES were initially wrapped by hand until wrapping machines were developed in 1921.</li>
+
+            <li> - Hershey built the town of Hershey, Pennsylvania, for the well-being of his factory employees.
+                The community included brick houses, lawns, and Hersheypark for recreational purposes</li>
+
+            <li> - The company's logo was the "Cocoa Bean Baby" from 1898 until 1968 when it became the Hershey Food Corporation.</li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- Contact Information & Submit Form -->
+<footer>
+    <div>
+
+        <a href="index.html"><img src="./img/hersheys-logo-png-transparent.png" alt="Hershey's logo"></a>
+    </div>
+    <div>
+        <p><strong>Company Information</strong></p>
+        <p>Hershey's Chocolates, Inc.</p>
+        <p>123 Chocolate Avenue, Sweet City</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@hersheys.com</p>
+    </div>
+    <div>
+        <p><strong>Contact Us</strong></p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</footer>
+</body>
+
+</html>
